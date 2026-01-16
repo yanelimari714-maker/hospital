@@ -8,11 +8,13 @@ app.use(express.json()); // Habilitar json
 //importar rutas
 const authRoutes = require('./routes/auth'); // Importar las rutas de autenticación
 const pacientesRoutes = require ('./routes/pacientes')
+const citasRoutes = require ('./routes/citas')
 
 //usar rutas
 
 app.use('/api/auth', authRoutes);
 app.use('/api/pacientes', pacientesRoutes);
+app.use('/api/citas', citasRoutes);
 
 //ruta de ejemplo
 
